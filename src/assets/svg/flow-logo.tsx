@@ -1,7 +1,7 @@
 // React Imports
 import type { SVGAttributes } from 'react'
 
-// EduAssura mark: a shield with a check inside the brand circle.
+// EduAssura mark: a bold "E" inside the brand circle.
 const FlowLogo = (props: SVGAttributes<SVGElement>) => {
   return (
     <svg width='1em' height='1em' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
@@ -10,13 +10,9 @@ const FlowLogo = (props: SVGAttributes<SVGElement>) => {
         fill='var(--primary)'
       />
       <path
-        d='M16 6.5L23.5 9.3V15.1C23.5 19.9 20.4 23.6 16 25.5C11.6 23.6 8.5 19.9 8.5 15.1V9.3L16 6.5Z'
-        fill='var(--primary-foreground)'
-      />
-      <path
-        d='M12.4 15.9L15 18.5L19.9 13.3'
-        stroke='var(--primary)'
-        strokeWidth='2.2'
+        d='M20.25 10.5H11.75V21.5H20.25M11.75 16H18.75'
+        stroke='var(--primary-foreground)'
+        strokeWidth='3'
         strokeLinecap='round'
         strokeLinejoin='round'
       />
