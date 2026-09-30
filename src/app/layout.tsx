@@ -130,7 +130,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       suppressHydrationWarning
     >
       <body className='flex min-h-full w-full flex-auto flex-col'>
-        <ThemeProvider attribute='class' enableSystem={false} disableTransitionOnChange>
+        <ThemeProvider attribute='class' forcedTheme='light' enableSystem={false} disableTransitionOnChange>
           <TooltipProvider>{children}</TooltipProvider>
         </ThemeProvider>
       </body>

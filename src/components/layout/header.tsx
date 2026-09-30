@@ -8,7 +8,6 @@ import Link from 'next/link'
 
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { PrimaryFlowButton, SecondaryFlowButton } from '@/components/ui/flow-button'
-import { ModeToggle } from '@/components/layout/mode-toggle'
 
 import { HeaderNavigation, HeaderNavigationSmallScreen, type Navigation } from '@/components/layout/header-navigation'
 
@@ -40,14 +39,14 @@ const Header = ({ navigationData, className }: HeaderProps) => {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 h-16 w-full transition-all duration-300',
+        'sticky top-0 z-50 h-16 w-full border-b transition-all duration-300',
         {
           'bg-card/75 backdrop-blur-sm': isScrolled
         },
         className
       )}
     >
-      <div className='flex h-full items-center justify-between gap-4 border-b px-4 sm:px-6 lg:px-8'>
+      <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8'>
         {/* Logo */}
         <Link href='/#home'>
           <div className='flex items-center gap-3'>
@@ -64,8 +63,6 @@ const Header = ({ navigationData, className }: HeaderProps) => {
 
         {/* Actions */}
         <div className='flex gap-4 sm:gap-6'>
-          <ModeToggle />
-
           <SecondaryFlowButton className='max-sm:hidden' asChild>
             <Link href='/login'>Login</Link>
           </SecondaryFlowButton>
