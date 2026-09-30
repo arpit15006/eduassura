@@ -43,6 +43,10 @@ interface MotionPresetProps {
 
 const motionComponents = motion as any
 
+// Site-wide pacing for entrance animations: shorter fades/slides and shorter stagger waits.
+const DURATION_SCALE = 0.6
+const DELAY_SCALE = 0.5
+
 function MotionPreset({
   ref,
   children,
@@ -112,7 +116,8 @@ function MotionPreset({
         }}
         transition={{
           ...transition,
-          delay: (transition?.delay ?? 0) + delay
+          ...(typeof transition?.duration === 'number' && { duration: transition.duration * DURATION_SCALE }),
+          delay: ((transition?.delay ?? 0) + delay) * DELAY_SCALE
         }}
         className={className}
         {...motionProps}

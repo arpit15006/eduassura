@@ -2,6 +2,9 @@ import Hero from '@/components/blocks/hero-section/hero-section'
 import TrustedBrands from '@/components/blocks/trusted-brands/trusted-brands'
 import Features from '@/components/blocks/features/features'
 import Modules from '@/components/blocks/modules/modules'
+import Councils from '@/components/blocks/councils/councils'
+import Integrations from '@/components/blocks/integrations/integrations'
+import Why from '@/components/blocks/why/why'
 import Benefits from '@/components/blocks/benefits/benefits'
 import Testimonials from '@/components/blocks/testimonials/testimonials'
 import FAQ from '@/components/blocks/faq/faq'
@@ -12,6 +15,9 @@ import { testimonials } from '@/assets/data/testimonials'
 import { faqItems } from '@/assets/data/faqs'
 import { benefits } from '@/assets/data/benefits'
 import { majorModules, moduleGroups } from '@/assets/data/modules'
+import { councils } from '@/assets/data/councils'
+import { integrations } from '@/assets/data/integrations'
+import { unlimitedServices, whyEduAssura } from '@/assets/data/why'
 
 import SectionSeparator from '@/components/section-separator'
 
@@ -50,7 +56,19 @@ const Home = () => {
 
       <SectionSeparator />
 
+      <Councils councils={councils} />
+
+      <SectionSeparator />
+
       <Benefits featuresList={benefits} />
+
+      <SectionSeparator />
+
+      <Integrations integrations={integrations} />
+
+      <SectionSeparator />
+
+      <Why whyItems={whyEduAssura} services={unlimitedServices} />
 
       <SectionSeparator />
 
