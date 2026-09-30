@@ -17,6 +17,9 @@ export type Features = {
   title: string
   description: string
   image: string
+
+  // Optional live visual (e.g. an animated illustration) shown instead of the light/dark images
+  visual?: ReactNode
 }[]
 
 const FeatureItem = ({
@@ -99,16 +102,20 @@ const ImageItem = ({
       className='absolute inset-0 flex items-center justify-center px-3'
       transition={{ duration: 0.3 }}
     >
-      <img
-        src={feature.image}
-        alt={feature.title}
-        className='h-full w-full max-w-110 object-contain md:max-h-95 dark:hidden'
-      />
-      <img
-        src={`${feature.image.replace('.webp', '-dark.webp')}`}
-        alt={feature.title}
-        className='hidden h-full w-full max-w-110 object-contain md:max-h-95 dark:inline-block'
-      />
+      {feature.visual ?? (
+        <>
+          <img
+            src={feature.image}
+            alt={feature.title}
+            className='h-full w-full max-w-110 object-contain md:max-h-95 dark:hidden'
+          />
+          <img
+            src={`${feature.image.replace('.webp', '-dark.webp')}`}
+            alt={feature.title}
+            className='hidden h-full w-full max-w-110 object-contain md:max-h-95 dark:inline-block'
+          />
+        </>
+      )}
     </motion.div>
   )
 }
@@ -221,16 +228,20 @@ const Benefits = ({ featuresList }: { featuresList: Features }) => {
                 <div className='bg-muted relative px-6 py-20'>
                   <div className='bg-card sticky top-20 flex h-87.5 items-center justify-center overflow-hidden rounded-xl border'>
                     <div className='absolute inset-0 flex items-center justify-center'>
-                      <img
-                        src={feature.image}
-                        alt={feature.title}
-                        className='size-full max-h-70 max-w-96 object-contain max-sm:max-w-70 dark:hidden'
-                      />
-                      <img
-                        src={`${feature.image.replace('.webp', '-dark.webp')}`}
-                        alt={feature.title}
-                        className='hidden size-full max-h-70 max-w-96 object-contain max-sm:max-w-70 dark:inline-block'
-                      />
+                      {feature.visual ?? (
+                        <>
+                          <img
+                            src={feature.image}
+                            alt={feature.title}
+                            className='size-full max-h-70 max-w-96 object-contain max-sm:max-w-70 dark:hidden'
+                          />
+                          <img
+                            src={`${feature.image.replace('.webp', '-dark.webp')}`}
+                            alt={feature.title}
+                            className='hidden size-full max-h-70 max-w-96 object-contain max-sm:max-w-70 dark:inline-block'
+                          />
+                        </>
+                      )}
                     </div>
                     {['top-4.5 left-4.5', 'top-4.5 right-4.5', 'bottom-4.5 left-4.5', 'bottom-4.5 right-4.5'].map(
                       (position, idx) => (

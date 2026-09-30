@@ -34,13 +34,15 @@ export const metadata: Metadata = {
     default: 'EduAssura - Every achievement, on the record'
   },
   description:
-    'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities across India and their IQAC.',
+    'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide and their quality assurance teams.',
   robots: 'index,follow',
   keywords: [
     'IQAC software',
     'institutional quality assurance',
     'faculty activity management',
     'accreditation data',
+    'NAAC accreditation',
+    'NIRF ranking data',
     'faculty appraisal',
     'SDG tagging'
   ],
@@ -91,9 +93,8 @@ export const metadata: Metadata = {
       default: 'EduAssura - Every achievement, on the record'
     },
     description:
-      'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities across India and their IQAC.',
+      'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide and their quality assurance teams.',
     type: 'website',
-    locale: 'en_IN',
     siteName: 'EduAssura',
     url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`,
     images: [
@@ -113,14 +114,14 @@ export const metadata: Metadata = {
       default: 'EduAssura - Every achievement, on the record'
     },
     description:
-      'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities across India and their IQAC.'
+      'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide and their quality assurance teams.'
   }
 }
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html
-      lang='en-IN'
+      lang='en'
       className={cn(
         poppins.variable,
         libreBaskerville.variable,

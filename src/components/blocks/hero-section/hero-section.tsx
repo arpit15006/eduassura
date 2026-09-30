@@ -49,7 +49,7 @@ const HeroSection = () => {
             className='z-10'
           >
             <Badge variant='outline' className='bg-background h-auto text-sm font-normal'>
-              Built for universities across India
+              Built for universities worldwide
             </Badge>
           </MotionPreset>
 
@@ -74,8 +74,8 @@ const HeroSection = () => {
             component='p'
             className='text-muted-foreground z-10 max-w-156 text-center text-xl'
           >
-            Faculty enter their work and proof. Heads and the quality cell verify it. Leadership gets reports, proofs
-            and quarterly sheets - all from the same records.
+            Faculty enter their work and proof. Heads and the quality cell verify it. Leadership gets NAAC, NIRF and
+            quarterly reports - all from the same records.
           </MotionPreset>
 
           <MotionPreset

@@ -1,6 +1,7 @@
-import { BellRingIcon, FileSpreadsheetIcon, LayersIcon, ShieldCheckIcon } from 'lucide-react'
+import { BellRingIcon, Building2Icon, FileSpreadsheetIcon, LayersIcon, ShieldCheckIcon } from 'lucide-react'
 
 import { type Features } from '@/components/blocks/benefits/benefits'
+import BeamIllustrations01 from '@/components/shadcn-studio/illustrations/beam-illustrations/beam-illustrations-01/beam-illustrations-01'
 
 export const benefits: Features = [
   {
@@ -22,13 +23,21 @@ export const benefits: Features = [
     title: 'Clear Verification Workflow',
     description:
       'Faculty submit, department heads check portfolios and proposals, and the quality cell verifies, corrects or rejects with a reason. Every step is recorded.',
-    image: '/images/benefits/image-03.webp'
+    image: '/images/benefits/image-03.webp',
+    visual: <BeamIllustrations01 />
   },
   {
     icon: <FileSpreadsheetIcon />,
     title: 'Audit-Ready in One Click',
     description:
-      'Download a quarter’s data sheet, the academic booklet or a bulk proof pack - for one faculty member, a department or the whole institute.',
+      'Download a quarter’s data sheet, the academic booklet or a bulk proof pack - for one faculty member, a department or the whole institute. The evidence NAAC peer teams and NIRF submissions ask for, in one place.',
     image: '/images/benefits/image-04.webp'
+  },
+  {
+    icon: <Building2Icon />,
+    title: 'Your University, Your Rules',
+    description:
+      'Your institutes, departments, roles, fields, proof rules, quarters and appraisal weightage are set up to match how your university works - with custom modules and approval steps when you need them. And your data stays in your own deployment: another university can never see it.',
+    image: '/images/benefits/image-05.webp'
   }
 ]

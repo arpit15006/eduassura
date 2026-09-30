@@ -1,7 +1,7 @@
 {
   "name": "EduAssura - IQAC platform",
   "short_name": "EduAssura",
-  "description": "One platform for faculty activity, proof, verification and institutional quality data - built for universities across India.",
+  "description": "One platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

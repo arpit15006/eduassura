@@ -37,6 +37,11 @@ export const faqItems: FAQs = [
       'Role-based dashboards for faculty, department, institute, centre and super admin; a faculty contribution view across modules; a category-wise appraisal score calculated from submitted and verified work; a quarterly data sheet in Excel for a faculty member, department or institute; an academic booklet; and bulk proof downloads, including staff profile documents, packed for audit use.'
   },
   {
+    question: 'Does it help with NAAC accreditation and NIRF rankings?',
+    answer:
+      'Yes. EduAssura captures, verifies and stores - with proof - the faculty and institutional data that NAAC accreditation and NIRF rankings draw on: publications, patents, research and consultancy projects, events, awards, guidance, MOUs, student strength and more. It exports that data as quarterly Excel sheets, an academic booklet and bulk proof packs, and the Excel columns and download packs can be configured to match the formats your IQAC uses. EduAssura is an independent product and is not affiliated with NAAC or NIRF.'
+  },
+  {
     question: 'Do cells and centres get their own workspace?',
     answer:
       'Yes. Each university centre gets its own dashboard, events and the modules that match its work. In the current deployment these include academic monitoring and faculty feedback, international relations and semester exchange, learning and academic event planning, faculty development and global certifications, research review, industry and corporate training participation, sports, cultural and innovation centres.'

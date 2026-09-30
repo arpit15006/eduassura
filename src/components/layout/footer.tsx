@@ -26,7 +26,7 @@ const Footer = () => {
           </Link>
           <p className='text-muted-foreground'>
             EduAssura brings faculty activity, proof, verification and institutional quality data into one platform
-            built for universities across India.
+            built for universities around the world.
           </p>
           <Separator className='w-35!' />
           <div className='flex items-center gap-4'>
@@ -114,16 +114,6 @@ const Footer = () => {
                 </PrimaryFlowButton>
               </form>
             </div>
-            <Separator />
-
-            <div className='flex flex-wrap justify-center gap-4'>
-              <img src='/images/brand-logos/bestofjs-logo-bw.webp' alt='bestofjs' className='h-5 dark:invert' />
-              <img src='/images/brand-logos/product-hunt-logo-bw.webp' alt='producthunt' className='h-5 dark:invert' />
-              <img src='/images/brand-logos/reddit-logo-bw.webp' alt='reddit' className='h-5 dark:invert' />
-              <img src='/images/brand-logos/medium-logo-bw.webp' alt='medium' className='h-5 dark:invert' />
-              <img src='/images/brand-logos/ycombinator-logo-bw.webp' alt='ycombinator' className='h-5 dark:invert' />
-              <img src='/images/brand-logos/launchtory-logo-bw.webp' alt='launchtory' className='h-5 dark:invert' />
-            </div>
           </div>
         </div>
       </div>
@@ -136,7 +126,7 @@ const Footer = () => {
           <Link className='text-foreground font-medium hover:underline' href='/#home'>
             EduAssura
           </Link>{' '}
-          All rights reserved | Made in India, for Indian universities.
+          All rights reserved | Made in India, for universities worldwide.
         </p>
       </div>
     </footer>

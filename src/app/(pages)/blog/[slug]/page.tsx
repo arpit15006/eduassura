@@ -92,9 +92,9 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ slug: string }> }
         '@id': `${process.env.NEXT_PUBLIC_APP_URL}#website`,
         name: 'EduAssura',
         description:
-          'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities across India and their IQAC.',
+          'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide and their quality assurance teams.',
         url: `${process.env.NEXT_PUBLIC_APP_URL}`,
-        inLanguage: 'en-IN'
+        inLanguage: 'en'
       },
       {
         '@context': 'https://schema.org',

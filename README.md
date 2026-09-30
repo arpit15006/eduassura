@@ -1,6 +1,6 @@
 # EduAssura — marketing site
 
-Marketing site for EduAssura, the IQAC platform for faculty activity, proof, verification and institutional quality data, built for universities across India.
+Marketing site for EduAssura, the IQAC platform for faculty activity, proof, verification and institutional quality data, built for universities worldwide.
 
 Built on the shadcn/studio **Flow** template (Next.js 16, React 19, Tailwind CSS 4, shadcn/ui) with the **Elegant Luxury** theme (maroon and cream, Poppins).
 

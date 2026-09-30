@@ -135,6 +135,15 @@ const eslintConfig = defineConfig([
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-var-requires': 'off'
     }
+  },
+  {
+    // Vendor code pasted from shadcn/studio: kept as shipped so it can be updated from the registry.
+    files: ['src/components/shadcn-studio/**/*.tsx', 'src/components/ui/blinking-particles.tsx'],
+    rules: {
+      'react-hooks/purity': 'off',
+      'react-hooks/refs': 'off',
+      'react-hooks/immutability': 'off'
+    }
   }
 ])
 

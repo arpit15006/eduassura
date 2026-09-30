@@ -168,7 +168,7 @@ const PricingDetail = ({ plans, features }: { plans: Plans; features: PricingFea
             </div>
 
             {/* Features Table */}
-            <div className='space-y-9'>
+            <div id='modules' className='scroll-mt-24 space-y-9'>
               {features.map((section, index) => (
                 <div key={index} className='space-y-6'>
                   {/* Category Header */}
