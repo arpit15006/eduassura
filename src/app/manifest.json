@@ -54,18 +54,6 @@
       "short_name": "Home",
       "description": "Go to homepage",
       "url": "/"
-    },
-    {
-      "name": "Blog",
-      "short_name": "Blog",
-      "description": "Explore blog posts",
-      "url": "/blog"
-    },
-    {
-      "name": "Pricing",
-      "short_name": "Pricing",
-      "description": "Explore pricing options",
-      "url": "/pricing"
     }
   ]
 }

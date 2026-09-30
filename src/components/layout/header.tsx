@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from 'react'
 
-import { ExternalLinkIcon, LogInIcon } from 'lucide-react'
+import { ExternalLinkIcon } from 'lucide-react'
 
 import Link from 'next/link'
 
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
-import { PrimaryFlowButton, SecondaryFlowButton } from '@/components/ui/flow-button'
+import { PrimaryFlowButton } from '@/components/ui/flow-button'
 
 import { HeaderNavigation, HeaderNavigationSmallScreen, type Navigation } from '@/components/layout/header-navigation'
 
@@ -63,25 +63,9 @@ const Header = ({ navigationData, className }: HeaderProps) => {
 
         {/* Actions */}
         <div className='flex gap-4 sm:gap-6'>
-          <SecondaryFlowButton className='max-sm:hidden' asChild>
-            <Link href='/login'>Login</Link>
-          </SecondaryFlowButton>
-
           <PrimaryFlowButton className='max-sm:hidden' asChild>
             <Link href='/#cta'>Book a demo</Link>
           </PrimaryFlowButton>
-
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <SecondaryFlowButton className='sm:hidden [&>a]:size-10 [&>a]:px-0' asChild>
-                <Link href='/login'>
-                  <LogInIcon />
-                  <span className='sr-only'>Login</span>
-                </Link>
-              </SecondaryFlowButton>
-            </TooltipTrigger>
-            <TooltipContent>Login</TooltipContent>
-          </Tooltip>
 
           <Tooltip>
             <TooltipTrigger asChild>

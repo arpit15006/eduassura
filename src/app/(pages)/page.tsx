@@ -1,17 +1,17 @@
 import Hero from '@/components/blocks/hero-section/hero-section'
 import TrustedBrands from '@/components/blocks/trusted-brands/trusted-brands'
 import Features from '@/components/blocks/features/features'
+import Modules from '@/components/blocks/modules/modules'
 import Benefits from '@/components/blocks/benefits/benefits'
 import Testimonials from '@/components/blocks/testimonials/testimonials'
-import Pricing from '@/components/blocks/pricing/pricing'
 import FAQ from '@/components/blocks/faq/faq'
 import CTA from '@/components/blocks/cta/cta'
 
 import { logos } from '@/assets/data/trusted-brands'
-import { plans } from '@/assets/data/pricing'
 import { testimonials } from '@/assets/data/testimonials'
 import { faqItems } from '@/assets/data/faqs'
 import { benefits } from '@/assets/data/benefits'
+import { majorModules, moduleGroups } from '@/assets/data/modules'
 
 import SectionSeparator from '@/components/section-separator'
 
@@ -46,15 +46,15 @@ const Home = () => {
 
       <SectionSeparator />
 
+      <Modules majorModules={majorModules} moduleGroups={moduleGroups} />
+
+      <SectionSeparator />
+
       <Benefits featuresList={benefits} />
 
       <SectionSeparator />
 
       <Testimonials testimonials={testimonials} />
-
-      <SectionSeparator />
-
-      <Pricing plans={plans} />
 
       <SectionSeparator />
 

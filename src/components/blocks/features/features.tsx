@@ -11,8 +11,6 @@ import {
   UsersRoundIcon
 } from 'lucide-react'
 
-import Link from 'next/link'
-
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
@@ -74,14 +72,6 @@ const Features = () => {
             Everything your IQAC needs to capture, verify and report faculty work for NAAC and NIRF - without the
             spreadsheets.
           </p>
-
-          <Link
-            href='/pricing#modules'
-            className='text-primary inline-flex items-center gap-1 text-base font-medium underline-offset-4 hover:underline'
-          >
-            See all 37 modules
-            <ArrowUpRightIcon className='size-4' />
-          </Link>
         </MotionPreset>
 
         <div className='grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3'>

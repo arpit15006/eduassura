@@ -59,18 +59,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href='/#modules' className='hover:text-foreground transition-colors duration-300'>
+                  Modules
+                </Link>
+              </li>
+              <li>
                 <Link href='/#benefits' className='hover:text-foreground transition-colors duration-300'>
                   Benefits
-                </Link>
-              </li>
-              <li>
-                <Link href='/pricing' className='hover:text-foreground transition-colors duration-300'>
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href='/blog' className='hover:text-foreground transition-colors duration-300'>
-                  Blog
                 </Link>
               </li>
             </ul>

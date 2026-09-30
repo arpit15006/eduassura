@@ -27,18 +27,16 @@ pnpm typecheck
 | Hero | `src/components/blocks/hero-section/` |
 | Trusted partner logos | `src/assets/data/trusted-brands.ts` (logos in `public/images/brand-logos/`) |
 | Feature cards | `src/components/blocks/features/` |
+| Modules (6 headline cards + full list) | `src/assets/data/modules.tsx` |
 | Benefits | `src/assets/data/benefits.tsx` |
 | Testimonials | `src/assets/data/testimonials.tsx` |
-| Pricing (home) | `src/assets/data/pricing.tsx` |
-| Pricing page + module comparison | `src/assets/data/pricing-details.tsx` |
 | FAQ | `src/assets/data/faqs.ts` |
-| Blog posts | `src/content/blog/*.mdx` |
 | Logo | `src/assets/svg/flow-logo.tsx` (mark), `src/components/logo.tsx` (mark + name) |
 | Theme colours and fonts | `src/app/globals.css`, `src/app/layout.tsx` |
 | Site metadata | `src/app/layout.tsx`, `src/app/manifest.json` |
 
 ## Before going live
 
-- Testimonials, pricing and blog authors are demo placeholders (marked in the data files).
+- Testimonials are demo placeholders (marked in the data file).
 - The "Book a demo" email box in the CTA section does not submit anywhere yet.
 - Social links in the footer point to `#`.

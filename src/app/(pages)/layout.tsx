@@ -70,20 +70,16 @@ const navigationData: Navigation[] = [
     ]
   },
   {
+    title: 'Modules',
+    href: '/#modules'
+  },
+  {
     title: 'Benefits',
     href: '/#benefits'
   },
   {
     title: 'Testimonials',
     href: '/#testimonials'
-  },
-  {
-    title: 'Pricing',
-    href: '/pricing'
-  },
-  {
-    title: 'Blog',
-    href: '/blog'
   }
 ]
 
