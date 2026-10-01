@@ -6,38 +6,38 @@ import BeamIllustrations01 from '@/components/shadcn-studio/illustrations/beam-i
 export const benefits: Features = [
   {
     icon: <LayersIcon />,
-    title: 'One Record, Every Report',
+    title: 'Reduce Manual Reporting by 70%',
     description:
-      'Faculty enter their work once. Verified data flows straight into dashboards, appraisal scores, quarterly Excel sheets, the academic booklet and proof downloads.',
+      'Faculty enter their data once. Validated data flows automatically into dashboards, accreditation reports, quarterly sheets, the academic booklet and bulk proof downloads - eliminating duplicate entry across systems.',
     image: '/images/benefits/image-01.webp'
   },
   {
     icon: <BellRingIcon />,
-    title: 'Reminders & Corrections',
+    title: 'Improve Data Accuracy & Transparency',
     description:
-      'Send reminders and correction requests from the portal. Faculty see exactly what to fix, and nobody chases anyone over email the week before an audit.',
+      'Smart validations, workflow automation, and centralized evidence management ensure every record is complete, verified, and traceable. No more inconsistencies across spreadsheets.',
     image: '/images/benefits/image-02.webp'
   },
   {
     icon: <ShieldCheckIcon />,
-    title: 'Clear Verification Workflow',
+    title: 'Enhance Accreditation Preparedness',
     description:
-      'Faculty submit, department heads check portfolios and proposals, and the quality cell verifies, corrects or rejects with a reason. Every step is recorded.',
+      'Accreditation data collection for NAAC, NBA, and NIRF is built into every module. Faculty submit, department heads review, and the quality cell verifies - with every step recorded for audit.',
     image: '/images/benefits/image-03.webp',
     visual: <BeamIllustrations01 />
   },
   {
     icon: <FileSpreadsheetIcon />,
-    title: 'Audit-Ready in One Click',
+    title: 'Enable Evidence-Based Decision Making',
     description:
-      'Download a quarter’s data sheet, the academic booklet or a bulk proof pack - for one faculty member, a department or the whole institute. The evidence NAAC peer teams and NIRF submissions ask for, in one place.',
+      'Real-time institutional performance insights, departmental dashboards, and KPI monitoring give leadership the data they need. Download quarterly reports, academic booklets, or bulk proof packs in one click.',
     image: '/images/benefits/image-04.webp'
   },
   {
     icon: <Building2Icon />,
-    title: 'Your University, Your Rules',
+    title: 'Your Institution, Your Configuration',
     description:
-      'Your institutes, departments, roles, fields, proof rules, quarters and appraisal weightage are set up to match how your university works - with custom modules and approval steps when you need them. And your data stays in your own deployment: another university can never see it.',
+      'Institutes, departments, roles, fields, proof rules, accreditation criteria, and approval workflows are configured to match how your institution works. Your data stays in your own deployment - fully isolated and secure.',
     image: '/images/benefits/image-05.webp'
   }
 ]

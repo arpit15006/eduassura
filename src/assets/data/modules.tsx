@@ -11,44 +11,44 @@ import {
 
 import type { ModuleGroup, MajorModule } from '@/components/blocks/modules/modules'
 
-// Module names and details follow the EduAssura brochure.
+// Module names and details follow the EduAssura concept note.
 
 export const majorModules: MajorModule[] = [
   {
     icon: <IdCardIcon />,
-    title: 'Staff Profile',
+    title: 'Faculty Profile Management',
     description:
-      'Teaching and non-teaching profiles with qualification, experience, department, designation, photo, appointment and joining letters. Incomplete profiles are flagged, and staff can be searched by name or MIS code.'
+      'Comprehensive faculty profiles with qualifications, experience, departments, designations, photo, and document uploads. Incomplete profiles are flagged, and staff can be searched by name or ID.'
   },
   {
     icon: <BookOpenTextIcon />,
-    title: 'Research Publications',
+    title: 'Research Publication & Patent Tracking',
     description:
-      'Journal papers, conference papers, books and book chapters - with indexing, DOI, ISSN, ISBN, co-authors, funding, SDG and proof upload.'
+      'Journal papers, conference papers, books, book chapters, and patents - with indexing, DOI, ISSN, ISBN, co-authors, funding, and proof upload for complete research tracking.'
   },
   {
     icon: <CalendarDaysIcon />,
-    title: 'Events & Proposals',
+    title: 'Event Organization & Participation',
     description:
-      'Events organized and attended - type, audience, funding, venue, dates, SDG, report, glimpses, flyer and attendance - plus event proposals reviewed by the department or centre before the event.'
+      'Events organized and participated - type, audience, funding, venue, dates, reports, glimpses, and attendance - plus event proposals reviewed by departments before approval.'
   },
   {
     icon: <ShieldCheckIcon />,
-    title: 'Verification Workflow',
+    title: 'Accreditation Data Collection',
     description:
-      'The quality cell verifies an entry, asks for a correction or rejects it with a reason. Reminders can be sent, and quarters can be frozen while corrections stay open until a set date.'
+      'Structured data collection for NAAC, NBA, NIRF, and other regulatory frameworks. The quality cell verifies entries, requests corrections, or rejects with documented reasons.'
   },
   {
     icon: <ChartColumnIcon />,
-    title: 'Appraisal Score',
+    title: 'Real-Time Analytics & KPI Monitoring',
     description:
-      'A category-wise score calculated from each faculty member’s submitted and verified work, with headings and weightage set by your university.'
+      'Departmental and institutional dashboards with real-time performance metrics, KPIs, and analytics to support evidence-based decision making.'
   },
   {
     icon: <FileSpreadsheetIcon />,
-    title: 'Reports & Proof Downloads',
+    title: 'Automated Report Generation',
     description:
-      'Quarterly Excel data sheets for a faculty member, department or institute, the academic booklet, and bulk proof downloads packed for audit use.'
+      'Quarterly Excel data sheets, academic booklets, accreditation-ready reports, and bulk proof downloads for faculty, departments, or the entire institution.'
   }
 ]
 
@@ -58,21 +58,21 @@ export const moduleGroups: ModuleGroup[] = [
     title: 'People & Profiles',
     modules: [
       {
-        name: 'Staff profile',
+        name: 'Faculty profile management',
         detail:
           'Teaching and non-teaching profiles: qualification, experience, department, designation, photo, appointment and joining letters. Incomplete profiles are flagged.'
       },
       {
         name: 'Research profile',
-        detail: 'A summary research profile kept beside detailed publication and project entries.'
+        detail: 'A summary research profile maintained alongside detailed publication and project entries.'
       },
       {
         name: 'Faculty augmentation',
         detail:
-          'Visiting, adjunct and professor-of-practice appointments, plus a centre workflow for new faculty requirements.'
+          'Visiting, adjunct and professor-of-practice appointments, plus workflows for new faculty requirements.'
       },
       { name: 'Professional membership', detail: 'Professional body memberships, with active status and proof.' },
-      { name: 'Search', detail: 'Search faculty and support staff across the directory, by name or MIS code.' }
+      { name: 'Search', detail: 'Search faculty and staff across the directory, by name or ID code.' }
     ]
   },
   {
@@ -82,16 +82,16 @@ export const moduleGroups: ModuleGroup[] = [
       {
         name: 'Research publications',
         detail:
-          'Journal papers, conference papers, books and chapters, with indexing, DOI, ISSN, ISBN, co-authors, funding, SDG and proof.'
+          'Journal papers, conference papers, books and chapters, with indexing, DOI, ISSN, ISBN, co-authors, funding, and proof.'
       },
       {
-        name: 'Intellectual property',
+        name: 'Patent & intellectual property',
         detail:
           'Patents and other IPR - national or international scope, application status, revenue, collaboration and proof.'
       },
       {
         name: 'Consultancy projects',
-        detail: 'Sponsored consultancy with agency, status, revenue, discipline, SDG and completion details.'
+        detail: 'Sponsored consultancy with agency, status, revenue, discipline and completion details.'
       },
       { name: 'Seed money', detail: 'In-house seed grants: title, team, dates, amount, year and proof.' },
       {
@@ -106,14 +106,14 @@ export const moduleGroups: ModuleGroup[] = [
     title: 'Events & Engagement',
     modules: [
       {
-        name: 'Activity & event management',
+        name: 'Event organization & participation',
         detail:
-          'Events organized and attended: type, audience, funding, venue, dates, SDG, report, glimpses, flyer and attendance. Faculty can also plan upcoming events.'
+          'Events organized and participated: type, audience, funding, venue, dates, report, glimpses, flyer and attendance. Faculty can also plan upcoming events.'
       },
       {
         name: 'Event proposals',
         detail:
-          'Proposal submission with guidelines, reviewed by the department or concerned centre before the event is held.'
+          'Proposal submission with guidelines, reviewed by the department or concerned authority before the event is held.'
       },
       {
         name: 'External academic contribution',
@@ -125,16 +125,16 @@ export const moduleGroups: ModuleGroup[] = [
   },
   {
     icon: <AwardIcon />,
-    title: 'Recognition & Guidance',
+    title: 'Recognition & Achievements',
     modules: [
       {
-        name: 'Awards & achievements',
-        detail: 'Faculty awards with category, level, awarding body, date, amount, SDG and proof.'
+        name: 'Student achievement management',
+        detail:
+          'Student awards and activities recorded by mentors, with level, domain, rank and proof; downloadable as a compiled view.'
       },
       {
-        name: 'Student achievements',
-        detail:
-          'Student awards and activities recorded by the mentor, with level, domain, rank and proof; downloadable as a compiled view.'
+        name: 'Faculty awards & achievements',
+        detail: 'Faculty awards with category, level, awarding body, date, amount, and proof.'
       },
       {
         name: 'Portfolio / coordinatorship',
@@ -154,38 +154,34 @@ export const moduleGroups: ModuleGroup[] = [
   },
   {
     icon: <ShieldCheckIcon />,
-    title: 'Quality & Reporting',
+    title: 'Quality Assurance & Reporting',
     modules: [
       {
-        name: 'Verification workflow',
+        name: 'Document verification workflow',
         detail:
-          'Verify, ask for a correction or reject with a reason; send reminders; freeze quarters while corrections stay open until a set date. HoDs verify portfolios and event proposals.'
+          'Verify, request correction, or reject with a reason; send reminders; freeze quarters while corrections stay open. Multi-level approval workflows.'
       },
       {
-        name: 'Faculty contribution view',
-        detail: 'One place for institute and department users to see contribution across modules.'
+        name: 'Document repository',
+        detail: 'Centralized evidence management with version tracking and audit trails for all uploaded documents.'
       },
       {
-        name: 'Appraisal score',
-        detail: 'Category-wise score calculated from the faculty member’s submitted and verified work.'
+        name: 'Accreditation data collection',
+        detail: 'Structured data collection aligned with NAAC, NBA, NIRF, and other regulatory frameworks.'
       },
       {
-        name: 'Quarterly data sheet',
-        detail: 'Excel download of a quarter’s data for a faculty member, department or institute.'
+        name: 'Automated report generation',
+        detail: 'Quarterly Excel data sheets, academic booklets, and accreditation-ready reports with one-click generation.'
       },
-      { name: 'Academic booklet', detail: 'Booklet-style compilation of academic records.' },
+      { name: 'Bulk proof downloads', detail: 'Download uploaded proofs in bulk, packed for audit use.' },
       {
-        name: 'Proof download',
-        detail: 'Bulk download of uploaded proofs, including staff profile documents, packed for audit use.'
-      },
-      {
-        name: 'Dashboards',
+        name: 'Institutional dashboards',
         detail: 'Role-based summary dashboards and charts for faculty, department, institute, centre and super admin.'
       },
       {
-        name: 'SDG tagging',
+        name: 'Real-time analytics & KPI monitoring',
         detail:
-          'Tag academic, research, event and award forms to a Sustainable Development Goal and review submissions SDG-wise.'
+          'Performance metrics, institutional KPIs, and analytics dashboards for evidence-based decision making.'
       }
     ]
   },
@@ -198,23 +194,23 @@ export const moduleGroups: ModuleGroup[] = [
         detail: 'Super admin maintains institutes, departments, programmes, cells and the academic quarter calendar.'
       },
       {
-        name: 'Centre portals',
+        name: 'Role-based access control',
         detail:
-          'Separate workspaces for university centres - such as international relations, faculty development, research review, sports, cultural and innovation - each with its own dashboard, events and modules.'
+          'Configurable roles and permissions - each user sees only the institutes, modules, and data assigned to their role.'
       },
       {
-        name: 'Login & access',
+        name: 'API integrations',
         detail:
-          'Role-based login, faculty registration with OTP, and menus that change by role. Users see only the institutes and modules assigned to them.'
+          'Connect with existing ERP systems, HRMS, LMS, single sign-on, and national academic databases for seamless data flow.'
       },
-      { name: 'Circulars', detail: 'Institute circulars published by admin and read by faculty.' },
+      { name: 'Circulars', detail: 'Institute circulars published by admin and read by faculty and staff.' },
       {
         name: 'Support tickets',
         detail: 'Users raise a ticket from their portal; super admin tracks tickets and portal feedback.'
       },
       {
         name: 'Student strength',
-        detail: 'Student counts by programme, year and semester, including lateral entry where used.'
+        detail: 'Student counts by programme, year and semester, including lateral entry where applicable.'
       },
       { name: 'Programme information', detail: 'Programme master for the institutes on the portal.' }
     ]

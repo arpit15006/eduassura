@@ -9,36 +9,36 @@ import {
 
 import type { Integration } from '@/components/blocks/integrations/integrations'
 
-// Kinds of university systems EduAssura connects to over APIs. Add named products (with logos) once confirmed.
+// API integration capabilities of EduAssura as described in the concept note.
 export const integrations: Integration[] = [
   {
     icon: <DatabaseIcon />,
-    title: 'University ERP & student information system',
-    description: 'Bring in institutes, programmes and student strength instead of entering them twice.'
+    title: 'Existing ERP & Student Information System',
+    description: 'Seamlessly connect with your university ERP to import institutes, programmes, and student data without duplicate entry.'
   },
   {
     icon: <UsersRoundIcon />,
-    title: 'HRMS & payroll',
-    description: 'Keep staff profiles, departments, designations and appointments in step with HR records.'
+    title: 'HRMS & Payroll Systems',
+    description: 'Keep faculty profiles, departments, designations, and appointment records synchronized with HR data.'
   },
   {
     icon: <BookOpenCheckIcon />,
-    title: 'Learning management system',
-    description: 'Connect course and academic content data from the LMS your faculty already use.'
+    title: 'Learning Management Systems',
+    description: 'Connect course and academic content data from the LMS your faculty and administrators already use.'
   },
   {
     icon: <KeyRoundIcon />,
-    title: 'Single sign-on',
-    description: 'Let faculty and staff sign in with the university accounts they already have.'
+    title: 'Single Sign-On & Authentication',
+    description: 'Let faculty, administrators, and IQAC teams sign in with their existing institutional credentials.'
   },
   {
     icon: <GlobeIcon />,
-    title: 'University website',
-    description: 'Publish a public faculty directory on your existing website from verified profiles.'
+    title: 'National Academic Databases',
+    description: 'Future integration with national academic databases and regulatory portals for seamless data exchange.'
   },
   {
     icon: <FileSpreadsheetIcon />,
-    title: 'Reports & data exports',
-    description: 'Send verified data to the reporting tools and formats your IQAC and leadership rely on.'
+    title: 'Automated Reports & Data Exports',
+    description: 'Send validated data to the reporting tools and accreditation formats your IQAC and leadership rely on.'
   }
 ]

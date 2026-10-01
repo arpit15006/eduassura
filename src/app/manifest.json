@@ -1,7 +1,7 @@
 {
-  "name": "EduAssura - IQAC platform",
+  "name": "EduAssura - Integrated Academic Quality Assurance Platform",
   "short_name": "EduAssura",
-  "description": "One platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide.",
+  "description": "A comprehensive cloud-based platform for institutional data collection, validation, monitoring, reporting, and quality assurance for higher education institutions.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

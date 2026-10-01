@@ -66,7 +66,7 @@ const GoalAndTargetCard = () => {
           transition={{ duration: 0.5 }}
           className='text-2xl font-semibold'
         >
-          Quarters & Freeze Dates
+          Academic Calendar & Data Management
         </MotionPreset>
 
         <MotionPreset
@@ -77,8 +77,8 @@ const GoalAndTargetCard = () => {
           transition={{ duration: 0.5 }}
           className='text-muted-foreground text-base'
         >
-          Set the academic quarter calendar, stop new entries on a freeze date and keep corrections open for as long as
-          you choose.
+          Set the academic quarter calendar, control data submission windows, and manage correction periods to align
+          with accreditation and reporting deadlines.
         </MotionPreset>
       </CardContent>
     </Card>

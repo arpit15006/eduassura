@@ -14,52 +14,52 @@ import {
 
 import type { WhyItem } from '@/components/blocks/why/why'
 
-// Points confirmed by the EduAssura team.
+// Points aligned with the EduAssura concept note.
 export const whyEduAssura: WhyItem[] = [
   {
     icon: <GraduationCapIcon />,
     title: 'Built by Academics',
-    description: 'Designed with academicians and IQAC practitioners who know accreditation from the inside.'
+    description: 'Designed with academicians and IQAC practitioners who understand accreditation from the inside.'
   },
   {
     icon: <AwardIcon />,
-    title: 'NAAC & NIRF Expertise',
-    description: 'Built around the data that NAAC accreditation and NIRF rankings ask for.'
+    title: 'NAAC, NBA & NIRF Expertise',
+    description: 'Built around the data that NAAC accreditation, NBA evaluation, and NIRF rankings require.'
   },
   {
     icon: <BadgeCheckIcon />,
-    title: 'Proven at Parul University',
-    description: 'Running live at Parul University across its institutes.'
+    title: 'Proven in Production',
+    description: 'Running live at institutions, managing faculty profiles, research data, and accreditation workflows.'
   },
   {
     icon: <LightbulbIcon />,
-    title: 'Process Consulting',
-    description: 'We suggest better processes and best practices while setting you up.'
+    title: 'Quality Assurance Consulting',
+    description: 'We suggest better processes, best practices, and workflow optimizations during setup and onboarding.'
   },
   {
     icon: <ShieldCheckIcon />,
     title: 'Secure & Isolated',
-    description: 'Your own deployment, OTP registration and role-based access - no other campus sees your data.'
+    description: 'Your own deployment, role-based access control, and complete data isolation - no other institution sees your data.'
   }
 ]
 
 export const unlimitedServices: WhyItem[] = [
   {
     icon: <PencilLineIcon />,
-    title: 'Unlimited Changes',
-    description: 'Changes to existing modules, whenever you need them.'
+    title: 'Unlimited Customization',
+    description: 'Changes to existing modules, workflows, and configurations whenever you need them.'
   },
-  { icon: <CodeXmlIcon />, title: 'Unlimited Development', description: 'New modules developed for your university.' },
+  { icon: <CodeXmlIcon />, title: 'Unlimited Development', description: 'New modules and integrations developed for your institution.' },
   {
     icon: <PresentationIcon />,
     title: 'Unlimited Training',
-    description: 'Training for your faculty, staff and support team.'
+    description: 'Training for your faculty, administrators, IQAC staff, and support team.'
   },
   { icon: <HeadsetIcon />, title: 'Unlimited Support', description: 'Support hours with no cap.' },
-  { icon: <MapPinIcon />, title: 'Unlimited Visits', description: 'On-site visits as and when required.' },
+  { icon: <MapPinIcon />, title: 'Unlimited Visits', description: 'On-site implementation visits as and when required.' },
   {
     icon: <DatabaseZapIcon />,
     title: 'Unlimited Data Porting',
-    description: 'Your existing data migrated into EduAssura.'
+    description: 'Your existing institutional data migrated into EduAssura.'
   }
 ]

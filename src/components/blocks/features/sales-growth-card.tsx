@@ -69,7 +69,7 @@ const SalesGrowthCard = () => {
               <div className='flex items-center justify-between gap-2 py-2'>
                 <div className='flex items-center gap-2'>
                   <BookOpenTextIcon className='size-4' />
-                  <span>Research & IPR</span>
+                  <span>Research & Patents</span>
                 </div>
                 <div className='flex items-center justify-between gap-2'>
                   <span className='font-medium'>412</span>
@@ -121,7 +121,7 @@ const SalesGrowthCard = () => {
           transition={{ duration: 0.5 }}
           className='text-2xl font-semibold'
         >
-          Submissions & Verification
+          Data Collection & Validation
         </MotionPreset>
         <MotionPreset
           component='p'
@@ -132,7 +132,7 @@ const SalesGrowthCard = () => {
           transition={{ duration: 0.5 }}
           className='text-muted-foreground text-base'
         >
-          Track what faculty submit and what the quality cell verifies, week by week, across every module.
+          Track institutional data submissions and quality cell validations, week by week, across every module.
         </MotionPreset>
       </CardContent>
     </Card>

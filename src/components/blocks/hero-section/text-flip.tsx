@@ -6,8 +6,10 @@ import { motion, AnimatePresence } from 'motion/react'
 
 import { cn } from '@/lib/utils'
 
+const DEFAULT_WORDS = ['Publication', 'Event', 'Patent', 'Achievement']
+
 const TextFlip = ({
-  words = ['Publication', 'Event', 'Award', 'Patent'],
+  words = DEFAULT_WORDS,
   duration = 3000
 }: {
   words?: string[]

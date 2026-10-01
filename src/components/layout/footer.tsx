@@ -25,8 +25,8 @@ const Footer = () => {
             <Logo />
           </Link>
           <p className='text-muted-foreground'>
-            EduAssura brings faculty activity, proof, verification and institutional quality data into one platform
-            built for universities around the world.
+            EduAssura is a comprehensive cloud-based platform that automates institutional data collection, validation,
+            monitoring, reporting, and quality assurance for higher education institutions.
           </p>
           <Separator className='w-35!' />
           <div className='flex items-center gap-4'>
@@ -48,11 +48,7 @@ const Footer = () => {
           <div className='flex flex-col gap-5'>
             <div className='text-lg font-medium'>Company</div>
             <ul className='text-muted-foreground space-y-3'>
-              <li>
-                <Link href='/#testimonials' className='hover:text-foreground transition-colors duration-300'>
-                  Testimonials
-                </Link>
-              </li>
+
               <li>
                 <Link href='/#features' className='hover:text-foreground transition-colors duration-300'>
                   Features
@@ -121,7 +117,7 @@ const Footer = () => {
           <Link className='text-foreground font-medium hover:underline' href='/#home'>
             EduAssura
           </Link>{' '}
-          All rights reserved | Made in India, for universities worldwide.
+          All rights reserved | Made in India, for higher education institutions worldwide.
         </p>
       </div>
     </footer>

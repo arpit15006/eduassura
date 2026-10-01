@@ -28,7 +28,7 @@ import RegularUpdatesCard from '@/components/blocks/features/regular-updates-car
 
 const visitorData = [
   {
-    product: 'Research',
+    product: 'Faculty',
     percentage: 28,
     amount: 362,
     trend: 'up',
@@ -66,11 +66,11 @@ const Features = () => {
         >
           <p className='text-primary text-sm font-medium uppercase'>Features</p>
 
-          <h2 className='text-2xl font-semibold md:text-3xl lg:text-4xl'>Powerful Modules, Simple to Use</h2>
+          <h2 className='text-2xl font-semibold md:text-3xl lg:text-4xl'>Key Features, Built for Quality Assurance</h2>
 
           <p className='text-muted-foreground text-xl'>
-            Everything your IQAC needs to capture, verify and report faculty work for NAAC and NIRF - without the
-            spreadsheets.
+            Everything your institution needs to collect, validate, monitor, and report academic and accreditation data
+            - all from one centralized platform.
           </p>
         </MotionPreset>
 
@@ -89,7 +89,7 @@ const Features = () => {
                   >
                     <StatCard
                       avatarIcon={<UsersRoundIcon className='size-4' />}
-                      title='Entries this quarter'
+                      title='Data entries this quarter'
                       statNumber='1,284'
                       percentage={-6}
                     />
@@ -144,8 +144,8 @@ const Features = () => {
                           </AvatarFallback>
                         </Avatar>
                         <p className='text-muted-foreground text-xs'>
-                          Verified entries are up <span className='text-card-foreground'>32%</span> this quarter and
-                          faculty uploaded 214 new proofs
+                          Verified records are up <span className='text-card-foreground'>32%</span> this quarter and
+                          faculty uploaded 214 new documents
                         </p>
                       </MotionPreset>
                     </Magnetic>
@@ -160,7 +160,7 @@ const Features = () => {
                     transition={{ duration: 0.5 }}
                     className='text-2xl font-semibold'
                   >
-                    Faculty Contribution
+                    Faculty Profile Management
                   </MotionPreset>
                   <MotionPreset
                     component='p'
@@ -170,8 +170,8 @@ const Features = () => {
                     transition={{ duration: 0.5 }}
                     className='text-muted-foreground text-base'
                   >
-                    See research, events and awards across modules for one faculty member, a department or the whole
-                    institute.
+                    Track faculty profiles, research publications, patents, events and achievements across departments
+                    for the whole institution.
                   </MotionPreset>
                 </CardContent>
               </Card>
@@ -337,7 +337,7 @@ const Features = () => {
                     transition={{ duration: 0.5 }}
                     className='text-muted-foreground text-base'
                   >
-                    Every user sees only the institutes, modules and menus assigned to their role - nothing more.
+                    Every user sees only the institutes, modules and menus assigned to their role - ensuring data security and compliance.
                   </MotionPreset>
                 </CardContent>
               </Card>
@@ -501,7 +501,7 @@ const Features = () => {
                     transition={{ duration: 0.5 }}
                     className='text-2xl font-semibold'
                   >
-                    Live Verification Feed
+                    Document Verification Workflow
                   </MotionPreset>
 
                   <MotionPreset
@@ -513,7 +513,8 @@ const Features = () => {
                     transition={{ duration: 0.5 }}
                     className='text-muted-foreground text-base'
                   >
-                    Every approval, correction and rejection in one clear trail - with the reason recorded for audit.
+                    Every approval, correction and rejection recorded with evidence - creating a complete audit trail
+                    for accreditation readiness.
                   </MotionPreset>
                 </CardContent>
               </Card>

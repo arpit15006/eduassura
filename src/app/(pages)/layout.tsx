@@ -24,21 +24,21 @@ const navigationData: Navigation[] = [
         title: 'Faculty & Research',
         items: [
           {
-            title: 'Faculty Contribution',
+            title: 'Faculty Profile Management',
             href: '/#features',
-            description: 'See every faculty member’s work across modules.',
+            description: 'Comprehensive faculty profiles with research and activity tracking.',
             icon: <LayoutDashboardIcon className='size-4' />
           },
           {
-            title: 'Research & IPR',
+            title: 'Research & Patent Tracking',
             href: '/#features',
-            description: 'Publications, patents, projects and seed grants.',
+            description: 'Publications, patents, projects and consultancy tracking.',
             icon: <BookOpenTextIcon className='size-4' />
           },
           {
-            title: 'Events & Proposals',
+            title: 'Event Management',
             href: '/#features',
-            description: 'Plan, propose and record every event with proof.',
+            description: 'Organize, participate, and track events with evidence.',
             icon: <CalendarDaysIcon className='size-4' />
           }
         ]
@@ -48,15 +48,15 @@ const navigationData: Navigation[] = [
         title: 'Quality & Reporting',
         items: [
           {
-            title: 'Verification Workflow',
+            title: 'Document Verification',
             href: '/#benefits',
-            description: 'Verify, correct or reject entries with a reason.',
+            description: 'Verify, correct or reject entries with audit trails.',
             icon: <ShieldCheckIcon className='size-4' />
           },
           {
-            title: 'Reports & Downloads',
+            title: 'Automated Reports',
             href: '/#benefits',
-            description: 'Quarterly Excel, academic booklet and proof packs.',
+            description: 'Quarterly Excel, accreditation reports, and evidence packs.',
             icon: <FileSpreadsheetIcon className='size-4' />
           },
           {
@@ -76,10 +76,6 @@ const navigationData: Navigation[] = [
   {
     title: 'Benefits',
     href: '/#benefits'
-  },
-  {
-    title: 'Testimonials',
-    href: '/#testimonials'
   }
 ]
 

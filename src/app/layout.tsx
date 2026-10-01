@@ -31,20 +31,25 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: {
     template: '%s - EduAssura',
-    default: 'EduAssura - Every achievement, on the record'
+    default: 'EduAssura - Integrated Academic Quality Assurance & Institutional Data Management Platform'
   },
   description:
-    'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide and their quality assurance teams.',
+    'EduAssura is a comprehensive cloud-based platform designed to automate institutional data collection, validation, monitoring, reporting, and quality assurance processes for higher education institutions.',
   robots: 'index,follow',
   keywords: [
+    'EduAssura',
     'IQAC software',
     'institutional quality assurance',
-    'faculty activity management',
+    'academic data management',
+    'faculty profile management',
+    'research publication tracking',
     'accreditation data',
     'NAAC accreditation',
+    'NBA accreditation',
     'NIRF ranking data',
-    'faculty appraisal',
-    'SDG tagging'
+    'automated report generation',
+    'institutional performance monitoring',
+    'quality assurance platform'
   ],
   icons: {
     icon: [
@@ -90,10 +95,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       template: '%s - EduAssura',
-      default: 'EduAssura - Every achievement, on the record'
+      default: 'EduAssura - Integrated Academic Quality Assurance & Institutional Data Management Platform'
     },
     description:
-      'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide and their quality assurance teams.',
+      'EduAssura is a comprehensive cloud-based platform designed to automate institutional data collection, validation, monitoring, reporting, and quality assurance processes for higher education institutions.',
     type: 'website',
     siteName: 'EduAssura',
     url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`,
@@ -103,7 +108,7 @@ export const metadata: Metadata = {
         type: 'image/png',
         width: 1200,
         height: 630,
-        alt: 'EduAssura - Every achievement, on the record'
+        alt: 'EduAssura - Integrated Academic Quality Assurance & Institutional Data Management Platform'
       }
     ]
   },
@@ -111,10 +116,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: {
       template: '%s - EduAssura',
-      default: 'EduAssura - Every achievement, on the record'
+      default: 'EduAssura - Integrated Academic Quality Assurance & Institutional Data Management Platform'
     },
     description:
-      'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide and their quality assurance teams.'
+      'EduAssura is a comprehensive cloud-based platform designed to automate institutional data collection, validation, monitoring, reporting, and quality assurance processes for higher education institutions.'
   }
 }
 

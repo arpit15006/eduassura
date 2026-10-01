@@ -1,15 +1,11 @@
 'use client'
 
-import { ExternalLinkIcon, StarIcon } from 'lucide-react'
-
-import Link from 'next/link'
 
 import TestimonialCard from '@/components/blocks/testimonials/testimonial-card'
 import type { TestimonialItem } from '@/components/blocks/testimonials/testimonial-card'
 
 import { Marquee } from '@/components/ui/marquee'
 import { MotionPreset } from '@/components/ui/motion-preset'
-import { PrimaryFlowButton } from '@/components/ui/flow-button'
 
 const Testimonials = ({ testimonials }: { testimonials: TestimonialItem[] }) => {
   return (
@@ -40,23 +36,7 @@ const Testimonials = ({ testimonials }: { testimonials: TestimonialItem[] }) => 
         </Marquee>
       </div>
 
-      <div className='mx-auto max-w-7xl space-y-4 px-4 text-center sm:px-6 lg:px-8'>
-        <div className='flex flex-wrap items-center justify-center gap-11'>
-          <div>
-            <div className='flex items-center gap-1.5'>
-              <p className='text-2xl font-semibold'>4.5</p>
-              <StarIcon className='fill-amber-600 stroke-amber-600 dark:fill-amber-400 dark:stroke-amber-400'></StarIcon>
-            </div>
-            <p className='text-muted-foreground text-sm font-medium'>Stars out of 5</p>
-          </div>
-          <PrimaryFlowButton asChild>
-            <Link href='#'>
-              View all testimonials
-              <ExternalLinkIcon />
-            </Link>
-          </PrimaryFlowButton>
-        </div>
-      </div>
+
     </section>
   )
 }

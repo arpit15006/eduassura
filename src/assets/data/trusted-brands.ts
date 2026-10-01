@@ -2,7 +2,7 @@ import type { brandLogos } from '@/components/blocks/trusted-brands/trusted-bran
 
 export const logos: brandLogos[] = [
   {
-    image: '/images/brand-logos/parul-university.png',
+    image: '/images/parul-logo-new.png',
     name: 'Parul University'
   }
 ]

@@ -4,66 +4,61 @@ export const faqItems: FAQs = [
   {
     question: 'What is EduAssura?',
     answer:
-      'EduAssura is one platform for faculty activity, proof, verification and institutional quality data. Faculty enter their work, heads of department and the quality cell verify it, and leadership downloads reports, proofs and quarterly sheets from the same records. It is built for multi-institute universities: each campus keeps its own institutes, departments, programmes, roles and centres.'
+      'EduAssura is a comprehensive cloud-based platform designed to automate institutional data collection, validation, monitoring, reporting, and quality assurance processes. It provides a centralized ecosystem for faculty, departments, administrators, and quality assurance teams to manage academic and institutional data efficiently.'
   },
   {
-    question: 'Who uses it?',
+    question: 'What problem does EduAssura solve?',
     answer:
-      'Seven role-based portals. Faculty: profile, research, events, awards, guidance and proofs. Head of Department: department view, proposal check, portfolio check and reports. Institute Admin: institute-wide data, roles, circulars, MOUs and downloads. Quality / Data Cell: verify entries, send corrections and lock a quarter. Cell / Centre: events, MOUs, research, feedback and centre-specific work. Support staff: staff directory and dashboard. Super Admin: institutes, departments, programmes, cells, quarters and tickets.'
+      'Higher Education Institutions face significant challenges in collecting, managing, verifying, and reporting academic, research, accreditation, and administrative data. Most institutions rely on fragmented systems, spreadsheets, and manual processes, resulting in duplication of work, data inconsistencies, delayed reporting, and difficulty in meeting accreditation requirements such as NAAC, NBA, NIRF, and other regulatory frameworks. EduAssura eliminates these challenges with a unified platform.'
   },
   {
-    question: 'Which modules are included?',
+    question: 'What are the key features of EduAssura?',
     answer:
-      'Staff profiles (teaching and non-teaching, with incomplete profiles flagged and search by name or MIS code), research profile, research publications (indexing, DOI, ISSN, ISBN, co-authors, funding, SDG and proof), intellectual property, consultancy projects, seed money, external research projects, activity and event management, event proposals, external academic contribution, awards and achievements, student achievements, portfolio and coordinatorship, professional membership, Ph.D. guide corner, PG and multidisciplinary guidance, academic content development, committee secretary, MOUs, student clubs and chapters, student strength, programme information, faculty augmentation (visiting, adjunct and professor-of-practice appointments, plus a centre workflow for new faculty requirements), circulars, search and support tickets - plus university setup, where the super admin maintains institutes, departments, programmes, cells and the academic quarter calendar.'
+      'EduAssura includes Faculty Profile Management, Research Publication & Patent Tracking, Event Organization & Participation Management, Student Achievement Management, Accreditation Data Collection (NAAC/NBA/NIRF), Automated Report Generation, Role-Based Access Control, Document Repository & Verification Workflow, Departmental and Institutional Dashboards, Real-Time Analytics & KPI Monitoring, and API Integration with Existing ERP Systems.'
   },
   {
-    question: 'How does a record move through the system?',
+    question: 'How is EduAssura different from traditional ERP systems?',
     answer:
-      'Faculty submit the form and upload proof. The record appears on the department and institute lists. The quality cell verifies it or returns it for correction. Verified data then flows into dashboards, appraisal, the quarterly Excel sheet, the academic booklet and proof downloads.'
+      'Unlike traditional ERP systems that primarily focus on academic administration, EduAssura specifically addresses quality assurance, accreditation readiness, and institutional performance monitoring. The platform minimizes manual intervention through workflow automation, smart validations, and centralized evidence management.'
   },
   {
-    question: 'What happens when an entry is wrong or incomplete?',
+    question: 'Who are the target users of EduAssura?',
     answer:
-      'The quality cell can verify an entry, ask for a correction, or reject it with a reason, and reminders can be sent. Department heads can verify selected items such as portfolios and event proposals.'
+      'EduAssura is designed for Universities, Colleges, IQAC Cells, Accreditation Committees, Academic Departments, and Research and Development Cells. Seven role-based portals ensure that every user sees only the data and modules relevant to their role.'
   },
   {
-    question: 'Can we lock a quarter?',
+    question: 'How does EduAssura handle accreditation data?',
     answer:
-      'Yes. Quarters can be frozen so new entries stop, while corrections remain open until a set date. The academic year, quarters and freeze dates are part of your configuration.'
+      'EduAssura captures, verifies and stores - with evidence - the faculty and institutional data that NAAC accreditation, NBA evaluation, and NIRF rankings require: publications, patents, research and consultancy projects, events, awards, guidance, MOUs, student strength and more. It exports data as quarterly Excel sheets, academic booklets and bulk proof packs, formatted to match what your IQAC uses.'
   },
   {
-    question: 'What reports and downloads do we get?',
+    question: 'What is the expected impact of using EduAssura?',
     answer:
-      'Role-based dashboards for faculty, department, institute, centre and super admin; a faculty contribution view across modules; a category-wise appraisal score calculated from submitted and verified work; a quarterly data sheet in Excel for a faculty member, department or institute; an academic booklet; and bulk proof downloads, including staff profile documents, packed for audit use.'
+      'EduAssura can reduce manual reporting efforts by over 70%, improve data accuracy and transparency, enhance accreditation preparedness, enable evidence-based decision making, and provide real-time institutional performance insights through dashboards and KPI monitoring.'
   },
   {
-    question: 'Does it help with NAAC accreditation and NIRF rankings?',
+    question: 'What is the business model?',
     answer:
-      'Yes. EduAssura captures, verifies and stores - with proof - the faculty and institutional data that NAAC accreditation and NIRF rankings draw on: publications, patents, research and consultancy projects, events, awards, guidance, MOUs, student strength and more. It exports that data as quarterly Excel sheets, an academic booklet and bulk proof packs, and the Excel columns and download packs can be configured to match the formats your IQAC uses. EduAssura is an independent product and is not affiliated with NAAC or NIRF.'
+      'EduAssura operates on a Software-as-a-Service (SaaS) subscription model, offering institution-wise licensing with optional customization, implementation, training, and support services. Each institution gets its own isolated deployment.'
   },
   {
-    question: 'Do cells and centres get their own workspace?',
+    question: 'Can EduAssura integrate with our existing systems?',
     answer:
-      'Yes. Each university centre gets its own dashboard, events and the modules that match its work. In the current deployment these include academic monitoring and faculty feedback, international relations and semester exchange, learning and academic event planning, faculty development and global certifications, research review, industry and corporate training participation, sports, cultural and innovation centres.'
+      'Yes. EduAssura provides API integration capabilities to connect with existing ERP systems, student information systems, HRMS & payroll, learning management systems, single sign-on, and university websites. This ensures your existing data flows seamlessly into the quality assurance platform.'
   },
   {
-    question: 'Can work be mapped to the Sustainable Development Goals?',
+    question: 'What future enhancements are planned?',
     answer:
-      'Yes. Selected academic, research, event and award forms can be tagged to a Sustainable Development Goal, and submissions can be reviewed SDG-wise.'
+      'The roadmap includes AI-powered accreditation readiness assessment, predictive analytics for institutional rankings, a mobile application for faculty and administrators, and integration with national academic databases and regulatory portals.'
   },
   {
-    question: 'How do people log in?',
+    question: 'Can EduAssura match our institution\'s structure?',
     answer:
-      'Role-based login, with faculty registration verified by OTP. Menus change by role, and each user sees only the institutes and modules assigned to them. Users can raise support tickets from their portal, and the super admin tracks tickets and portal feedback.'
+      'Yes. Set during onboarding: your name, logo, colours and login page; institutes, campuses, departments and programmes; which modules each role can open; cells and centres with their own names and menus; dropdown values, mandatory fields and proof rules; academic year, quarters and freeze dates; who verifies which module; Excel columns and download packs; appraisal score headings and weightage; circulars, roles and ticket categories.'
   },
   {
-    question: 'Can it match our university’s structure and language?',
+    question: 'Is our data kept separate from other institutions?',
     answer:
-      'Yes. Set during onboarding: your name, logo, colours and login page; institutes, campuses, departments and programmes; which modules each role can open; cells and centres with their own names and menus; dropdown values, mandatory fields and proof rules; academic year, quarters and freeze dates; who verifies which module; Excel columns and download packs; appraisal score headings and weightage; circulars, roles and ticket categories. Available as a custom build: a new module or field, an extra approval step, a report or booklet in your format, a new centre workflow, a public faculty directory on your existing website, and labels renamed to match your IQAC’s language.'
-  },
-  {
-    question: 'Is our data kept separate from other universities?',
-    answer:
-      'Yes. EduAssura is deployed per university, and each university’s data stays in its own deployment. Another campus cannot see it.'
+      'Yes. EduAssura is deployed per institution, and each institution\'s data stays in its own deployment. Another campus or institution cannot see it. Your data is fully isolated and secure.'
   }
 ]

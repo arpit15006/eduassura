@@ -6,12 +6,12 @@ import Councils from '@/components/blocks/councils/councils'
 import Integrations from '@/components/blocks/integrations/integrations'
 import Why from '@/components/blocks/why/why'
 import Benefits from '@/components/blocks/benefits/benefits'
-import Testimonials from '@/components/blocks/testimonials/testimonials'
+
 import FAQ from '@/components/blocks/faq/faq'
 import CTA from '@/components/blocks/cta/cta'
 
 import { logos } from '@/assets/data/trusted-brands'
-import { testimonials } from '@/assets/data/testimonials'
+
 import { faqItems } from '@/assets/data/faqs'
 import { benefits } from '@/assets/data/benefits'
 import { majorModules, moduleGroups } from '@/assets/data/modules'
@@ -30,7 +30,7 @@ const jsonLd = {
       '@id': `${process.env.NEXT_PUBLIC_APP_URL}#website`,
       name: 'EduAssura',
       description:
-        'EduAssura is one platform for faculty activity, proof, verification and institutional quality data - built for universities worldwide and their quality assurance teams.',
+        'EduAssura is a comprehensive cloud-based platform designed to automate institutional data collection, validation, monitoring, reporting, and quality assurance processes for higher education institutions.',
       url: `${process.env.NEXT_PUBLIC_APP_URL}`,
       inLanguage: 'en'
     }
@@ -70,9 +70,6 @@ const Home = () => {
 
       <Why whyItems={whyEduAssura} services={unlimitedServices} />
 
-      <SectionSeparator />
-
-      <Testimonials testimonials={testimonials} />
 
       <SectionSeparator />
 

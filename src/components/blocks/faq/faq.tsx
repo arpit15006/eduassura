@@ -54,21 +54,21 @@ const FAQ = ({ faqItems }: { faqItems: FAQs }) => {
           </Accordion>
 
           {/* Right content */}
-          <div className='group bg-muted relative mx-auto flex h-full max-h-116 w-full max-w-148 items-end justify-center overflow-hidden rounded-xl border lg:max-xl:max-h-95'>
+          <div className='group bg-muted/50 relative mx-auto flex w-full max-w-148 items-center justify-center overflow-hidden rounded-2xl border p-8 shadow-inner'>
             <img
               src='/images/dashboard.webp'
-              alt='Dashboard'
+              alt='EduAssura Dashboard'
               loading='lazy'
-              className='h-full w-full origin-bottom scale-90 rounded-t-md shadow-md transition-transform duration-500 group-hover:scale-100 dark:hidden'
+              className='w-full h-auto rounded-xl shadow-2xl ring-1 ring-border/50 transition-transform duration-500 group-hover:scale-105 dark:hidden'
             />
             <img
               src='/images/dashboard-dark.webp'
-              alt='Dashboard'
+              alt='EduAssura Dashboard'
               loading='lazy'
-              className='hidden h-full w-full origin-bottom scale-90 rounded-t-md shadow-md transition-transform duration-400 group-hover:scale-100 dark:inline-block'
+              className='hidden w-full h-auto rounded-xl shadow-2xl ring-1 ring-border/50 transition-transform duration-400 group-hover:scale-105 dark:inline-block'
             />
 
-            {['top-4.5 left-4.5', 'top-4.5 right-4.5', 'bottom-4.5 left-4.5', 'bottom-4.5 right-4.5'].map(
+            {['top-4 left-4', 'top-4 right-4', 'bottom-4 left-4', 'bottom-4 right-4'].map(
               (position, idx) => (
                 <motion.svg
                   key={`${idx}-${rotationKey}`}

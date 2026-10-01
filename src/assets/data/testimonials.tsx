@@ -9,9 +9,9 @@ export const testimonials: TestimonialItem[] = [
     rating: 5,
     content: (
       <>
-        Quarter-end used to mean chasing spreadsheets for weeks. Now{' '}
-        <span className='bg-primary/5 text-primary'>every entry arrives with its proof attached</span> and we verify it
-        once, in one place.
+        Accreditation preparation used to mean chasing spreadsheets for weeks. Now{' '}
+        <span className='bg-primary/5 text-primary'>every entry arrives with its evidence attached</span> and we verify
+        it once, in one place.
       </>
     )
   },
@@ -23,8 +23,8 @@ export const testimonials: TestimonialItem[] = [
     content: (
       <>
         I can see my whole department at a glance and{' '}
-        <span className='bg-primary/5 text-primary'>sign off portfolios and event proposals in minutes</span>, not after
-        a stack of emails.
+        <span className='bg-primary/5 text-primary'>review faculty profiles and research publications in minutes</span>,
+        not after a stack of emails.
       </>
     )
   },
@@ -35,7 +35,7 @@ export const testimonials: TestimonialItem[] = [
     rating: 5,
     content: (
       <>
-        I log a paper, upload the proof and I&apos;m done. When something is missing,{' '}
+        I log a publication, upload the proof and I&apos;m done. When something is missing,{' '}
         <span className='bg-primary/5 text-primary'>the correction note tells me exactly what to fix</span>.
       </>
     )
@@ -47,32 +47,32 @@ export const testimonials: TestimonialItem[] = [
     rating: 4.5,
     content: (
       <>
-        Circulars, roles, MOUs and downloads all live in one portal. The{' '}
-        <span className='bg-primary/5 text-primary'>quarterly Excel sheet is ready the day the quarter closes</span>.
+        Faculty profiles, events, MOUs and reports all live in one portal. The{' '}
+        <span className='bg-primary/5 text-primary'>automated reports are ready the day the quarter closes</span>.
       </>
     )
   },
   {
     name: 'Dr. Sneha Kulkarni',
-    username: 'Director, Research Centre',
+    username: 'Director, Research Cell',
     avatar: '/images/avatar/avatar-2.webp',
     rating: 4,
     content: (
       <>
-        Our centre has its own workspace with the modules we actually use.{' '}
-        <span className='bg-primary/5 text-primary'>SDG tagging made our impact report far easier</span> to put
-        together.
+        Our research cell has its own dashboard with the modules we actually use.{' '}
+        <span className='bg-primary/5 text-primary'>Real-time analytics made our performance reporting far easier</span>{' '}
+        to put together.
       </>
     )
   },
   {
-    name: 'Prof. Vikram Shah',
-    username: 'Dean, Academics',
+    name: 'Dr. Vaibhavi Patel',
+    username: 'Quality Assurance Consultant',
     avatar: '/images/avatar/avatar-1.webp',
     rating: 5,
     content: (
       <>
-        On audit day we downloaded the proof pack and the academic booklet in one go.{' '}
+        On audit day we downloaded the evidence pack and the accreditation reports in one go.{' '}
         <span className='bg-primary/5 text-primary'>No all-nighters, no missing documents</span>.
       </>
     )

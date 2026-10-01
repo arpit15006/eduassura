@@ -52,7 +52,7 @@ const notificationsList: NotificationCard[] = [
   },
   {
     id: '3',
-    productName: 'Patents & IPR',
+    productName: 'Patent Tracking',
     productIcon: <LightbulbIcon className='text-primary size-10 stroke-[1.5]' />,
     percentageChange: 10,
     stats: { reach: 23, users: 17, queries: 3 }
@@ -165,7 +165,7 @@ const RegularUpdatesCard = () => {
           transition={{ duration: 0.5 }}
           className='text-2xl font-semibold'
         >
-          Reminders & Alerts
+          Automated Notifications & Alerts
         </MotionPreset>
         <MotionPreset
           component='p'
@@ -175,8 +175,8 @@ const RegularUpdatesCard = () => {
           transition={{ duration: 0.5 }}
           className='text-muted-foreground text-base'
         >
-          Automatic reminders and correction requests keep submissions moving - so nothing slips before the quarter
-          closes.
+          Automated notifications and correction requests keep data flowing - ensuring nothing slips before
+          accreditation deadlines.
         </MotionPreset>
       </CardContent>
     </Card>
