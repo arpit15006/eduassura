@@ -26,6 +26,8 @@ export async function POST(req: Request) {
 
     if (!myEmail || !process.env.SMTP_PASS) {
       console.warn('⚠️ SMTP credentials not configured. Form submission received but email not sent:', email)
+
+
       // In development, we'll still return success so the UI works, 
       // but warn the developer that emails aren't actually sending.
       return NextResponse.json({ success: true, warning: 'SMTP not configured' })
@@ -53,6 +55,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: true })
   } catch (error) {
     console.error('Failed to send email:', error)
+
     return NextResponse.json({ error: 'Failed to send email' }, { status: 500 })
   }
 }

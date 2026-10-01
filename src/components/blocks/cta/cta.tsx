@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+
 import { SendIcon, LoaderIcon } from 'lucide-react'
 
 import { Input } from '@/components/ui/input'
@@ -33,12 +34,14 @@ const CTASection = () => {
       setIsSubmitted(true)
     } catch (error) {
       console.error('Failed to submit email', error)
+
       // We still show success to not disrupt the UX if API fails in demo mode
       setIsSubmitted(true)
     } finally {
       setIsLoading(false)
     }
   }
+
   return (
     <section id='cta' className='relative z-1 pt-16 pb-16 sm:pt-32 sm:pb-16 lg:pt-48 lg:pb-24'>
       <div className='bg-background mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -90,7 +93,7 @@ const CTASection = () => {
                 </svg>
               </div>
               <p className='text-lg font-medium text-green-700 dark:text-green-400'>
-                Demo requested! We'll be in touch soon.
+                Demo requested! We&apos;ll be in touch soon.
               </p>
             </div>
           ) : (

@@ -7,14 +7,14 @@ import { ArrowUpRightIcon, CircleCheckIcon, LoaderIcon } from 'lucide-react'
 import Link from 'next/link'
 
 import { Badge } from '@/components/ui/badge'
-import { Skeleton } from '@/components/ui/skeleton'
+
 import { BackgroundRippleEffect } from '@/components/ui/background-ripple-effect'
 import { MotionPreset } from '@/components/ui/motion-preset'
 import { PrimaryFlowButton } from '@/components/ui/flow-button'
 
 import TextFlip from '@/components/blocks/hero-section/text-flip'
 
-import { cn } from '@/lib/utils'
+
 
 import FlowLogo from '@/assets/svg/flow-logo'
 
@@ -25,6 +25,7 @@ const HeroSection = () => {
     const interval = setInterval(() => {
       setMessageIndex(prev => (prev + 1) % 4)
     }, 2500)
+
     return () => clearInterval(interval)
   }, [])
 

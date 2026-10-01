@@ -27,7 +27,7 @@ const Integrations = ({ integrations }: { integrations: Integration[] }) => {
           <h2 className='text-2xl font-semibold md:text-3xl lg:text-4xl'>Works With the Systems You Already Use</h2>
 
           <p className='text-muted-foreground mx-auto max-w-3xl text-xl'>
-            EduAssura connects to your institution's existing systems through APIs - so data flows in once and stays in
+            EduAssura connects to your institution&apos;s existing systems through APIs - so data flows in once and stays in
             sync, with no double entry.
           </p>
         </MotionPreset>
