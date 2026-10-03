@@ -23,12 +23,16 @@ const CTASection = () => {
     
     const formData = new FormData(e.currentTarget)
     const email = formData.get('cta-email')
+    const personName = formData.get('cta-person-name')
+    const contactNumber = formData.get('cta-contact-number')
+    const designation = formData.get('cta-designation')
+    const organizationName = formData.get('cta-organization')
 
     try {
       await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
+        body: JSON.stringify({ email, personName, contactNumber, designation, organizationName })
       })
       
       setIsSubmitted(true)
@@ -86,7 +90,7 @@ const CTASection = () => {
 
         <MotionPreset fade blur zoom={{ initialScale: 0.95 }} delay={0.6} transition={{ duration: 0.4 }}>
           {isSubmitted ? (
-            <div className='bg-background relative mx-auto -mt-9.25 flex size-fit w-full max-w-lg items-center justify-center gap-3 rounded-xl border-2 border-green-500/50 bg-green-50/50 p-4 shadow-sm dark:bg-green-950/20'>
+            <div className='bg-background relative mx-auto -mt-12 flex size-fit w-full max-w-lg items-center justify-center gap-3 rounded-xl border-2 border-green-500/50 bg-green-50/50 p-4 shadow-sm dark:bg-green-950/20'>
               <div className='flex h-8 w-8 items-center justify-center rounded-full bg-green-500 text-white'>
                 <svg className='h-5 w-5' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
                   <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M5 13l4 4L19 7'></path>
@@ -97,20 +101,37 @@ const CTASection = () => {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit}>
-              <div className='border-primary dark:border-primary/70 bg-background relative mx-auto -mt-9.25 flex size-fit w-full max-w-lg gap-2.5 rounded-xl border-2 p-2'>
-                <Input
-                  type='email'
-                  name='cta-email'
-                  placeholder='Your work email address'
-                  className='h-10 border-none shadow-none focus-visible:ring-transparent dark:bg-transparent'
-                  required
-                />
-                <PrimaryFlowButton className='hidden shrink-0 sm:inline-flex' type='submit' disabled={isLoading}>
+            <form onSubmit={handleSubmit} className='border-primary dark:border-primary/70 bg-background relative mx-auto -mt-16 flex w-full max-w-lg flex-col gap-5 rounded-xl border-2 p-6 shadow-xl'>
+              <div className='grid grid-cols-1 gap-5 sm:grid-cols-2'>
+                <div className='flex flex-col gap-1.5'>
+                  <label htmlFor='cta-person-name' className='text-sm font-medium text-foreground'>Person Name <span className='text-destructive'>*</span></label>
+                  <Input id='cta-person-name' name='cta-person-name' placeholder='John Doe' required />
+                </div>
+                <div className='flex flex-col gap-1.5'>
+                  <label htmlFor='cta-email' className='text-sm font-medium text-foreground'>Mail ID <span className='text-destructive'>*</span></label>
+                  <Input type='email' id='cta-email' name='cta-email' placeholder='john@example.com' required />
+                </div>
+              </div>
+              
+              <div className='grid grid-cols-1 gap-5 sm:grid-cols-2'>
+                <div className='flex flex-col gap-1.5'>
+                  <label htmlFor='cta-contact-number' className='text-sm font-medium text-foreground'>Contact Number</label>
+                  <Input type='tel' id='cta-contact-number' name='cta-contact-number' placeholder='+1 (555) 000-0000' />
+                </div>
+                <div className='flex flex-col gap-1.5'>
+                  <label htmlFor='cta-designation' className='text-sm font-medium text-foreground'>Designation</label>
+                  <Input id='cta-designation' name='cta-designation' placeholder='e.g. Dean, Professor' />
+                </div>
+              </div>
+
+              <div className='flex flex-col gap-1.5'>
+                <label htmlFor='cta-organization' className='text-sm font-medium text-foreground'>Organization Name <span className='text-destructive'>*</span></label>
+                <Input id='cta-organization' name='cta-organization' placeholder='University Name' required />
+              </div>
+
+              <div className='mt-4 flex w-full justify-center'>
+                <PrimaryFlowButton type='submit' disabled={isLoading}>
                   {isLoading ? <LoaderIcon className='animate-spin' /> : 'Book a demo'}
-                </PrimaryFlowButton>
-                <PrimaryFlowButton className='hidden shrink-0 max-sm:inline-flex' type='submit' disabled={isLoading}>
-                  {isLoading ? <LoaderIcon className='animate-spin' /> : <SendIcon />}
                 </PrimaryFlowButton>
               </div>
             </form>
